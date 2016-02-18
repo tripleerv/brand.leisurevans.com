@@ -1,0 +1,76 @@
+$base-font-size: 1rem;
+$line-height-unitless: 1.45;
+$line-height: #{($base-font-size*$line-height-unitless)};
+$line-height-2x: #{($base-font-size*$line-height-unitless)*2};
+
+// Use base-color as the root colour for all other colours
+$base-color: #7a7a7a;
+$base-color-invert: lighten($base-color, 50%);  // #fafafa
+
+$accent-color: #009cde;
+$accent-color-invert: $base-color-invert;
+
+$background-accent-grey: lighten($base-color, 47%); // #f2f2f2
+$subdued-grey: lighten($base-color, 50%); // #fafafa
+$light-grey: lighten($base-color, 40%); // #e0e0e0
+$dark-grey: darken($base-color, 10%); // #616161
+$white: $subdued-grey;
+$black: #222222;
+
+.var-subdued {
+  color: $subdued-grey;
+}
+
+.var-light-grey {
+  color: $light-grey;
+}
+
+.var-dark-grey {
+  color: $dark-grey;
+}
+
+.var-primary {
+  color: $base-color;
+}
+
+.var-accent {
+  color: $accent-color;
+}
+
+.var-btn {
+  background-color: $accent-color;
+  display: inline-block;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.25rem;
+
+}
+
+.var-accent-invert {
+  color: $accent-color-invert;
+}
+
+$heading-text-color: $dark-grey; // #616161
+$text-color: $base-color; // #7a7a7a
+$text-color-invert: $base-color-invert;
+
+$link-text-color: $accent-color;
+$link-text-color-invert: $accent-color-invert;
+
+// Fonts
+$sans: 'proxima nova', -apple-system, BlinkMacSystemFont, Roboto, Helmet, Freesans, sans-serif;
+$chronicle: 'Chronicle Display A', 'Chronicle Display B';
+$gotham: 'Gotham A', 'Gotham B';
+
+// Bourbon Config
+$grid-columns: 12;
+$gutter: $line-height;
+$max-width: em(800);
+// $visual-grid         :  true;
+// $visual-grid-index   :  back;
+// $visual-grid-colour  :	 rgba(0, 0, 15, .5);
+
+// Breakpoints
+$small: new-breakpoint(min-width 500px 4);
+$medium: new-breakpoint(min-width 800px 6);
+$large: new-breakpoint(min-width 1200px 12);

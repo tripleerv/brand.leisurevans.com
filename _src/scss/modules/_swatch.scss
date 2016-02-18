@@ -1,0 +1,28 @@
+.swatch {
+  width: 100%;
+  height: 100px;
+  display: block;
+  position: relative;
+}
+
+.swatch-text {
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.sw-black { background-color: #000000; }
+.sw-white { background-color: #ffffff; }
+
+.sw-acc-blue { background-color: $accent-color; }
+
+.sw-text-base { color: $text-color; }
+.sw-text-heading { color: $heading-text-color; }
+.sw-text-accent { color: $link-text-color; }
+.sw-text-invert { color: $text-color-invert; background-color: $base-color; }
+
+.sw-fill-black { background-color: $black; }
+.sw-fill-base { background-color: $base-color; }
+.sw-fill-accent-bg { background-color: $background-accent-grey; border: 1px solid $light-grey; }
+.sw-fill-subdued-grey { background-color: $subdued-grey; border: 1px solid $light-grey; }
+.sw-fill-light-grey { background-color: $light-grey; }
+.sw-fill-dark-grey { background-color: $dark-grey; }

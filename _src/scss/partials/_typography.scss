@@ -1,0 +1,167 @@
+body {
+  font-size: $base-font-size;
+  font-family: $sans;
+  line-height: 1.45;
+  color: $text-color;
+  background-color: $subdued-grey;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-bottom: $line-height;
+}
+
+h1 {
+  font-size: #{2.4*$base-font-size};
+}
+
+h2 {
+  font-size: #{2.2*$base-font-size};
+}
+
+h3 {
+  font-size: #{1.8*$base-font-size};
+}
+
+b {
+  font-weight: 600;
+}
+
+article h1 {
+  margin-bottom: $line-height;
+}
+
+ul,
+ol {
+  padding-left: 1.4rem;
+}
+
+blockquote {
+  margin-left: 1rem;
+  font-style: italic;
+  color: $text-color;
+}
+
+aside {
+  color: $text-color;
+}
+
+pre,
+code {
+  // font-size: inherit;
+  font-family: $monospace;
+  background: $light-grey;
+  // padding: 0.25rem 0.375rem;;
+  // border-radius: 3px;
+}
+
+code {
+  display: inline-block;
+}
+
+pre {
+  display: block;
+  white-space: pre-wrap; // CSS3
+  word-wrap: break-word;
+}
+
+h1 a:hover, h2 a:hover {
+  text-decoration: none;
+}
+
+.chronicle-bold {
+  font-family: $chronicle;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.chronicle-bold-italic {
+  font-family: $chronicle;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.gotham-regular {
+  font-family: $gotham;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: $base-font-size *1.625;
+}
+
+.knockout-heavy {
+  font-family: $chronicle;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.pn-heading {
+  font-family: $sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $base-font-size *1.325
+}
+
+.site-name {
+  font-size: $base-font-size * 1.5;
+  font-weight: bold;
+}
+
+.description {
+  color: $text-color-invert;
+  font-style: italic;
+}
+
+.huge {
+  font-size: $base-font-size * 4;
+  font-family: $chronicle;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.large {
+  font-size: $base-font-size * 2;
+}
+
+.brand-heading {
+  font-family: $chronicle;
+  font-style: italic;
+  margin-bottom: $gutter;
+  font-size: $base-font-size * 2.5;
+  font-weight: 600;
+}
+
+.brand-subheading {
+  margin-bottom: $gutter;
+  font-size: $base-font-size * 1.25;
+  text-transform: uppercase;
+}
+
+.col-desc {
+  color: $dark-grey;
+}
+
+.brand-wording {
+  font-weight: 600;
+}
+
+.brand-wording-incorrect {
+  color: lighten($dark-grey, 30%);
+}
+
+.item-title, .item-description {
+  display: block;
+  font-size: $base-font-size / 1.25;
+}
+
+.item-title {
+  color: $heading-text-color;
+  font-weight: 600;
+}
+
+.item-description {
+  color: $text-color;
+  margin-top: #{$line-height-unitless/2}rem;
+}
