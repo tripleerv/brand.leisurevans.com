@@ -1,3 +1,3 @@
-# Lode King Brand Standards
+# Leisure Travel Vans Brand Standards
 
-View the entire brand standards [here](http://brand.lodeking.com).
+View the entire brand standards [here](http://brand.leisurevans.com).
