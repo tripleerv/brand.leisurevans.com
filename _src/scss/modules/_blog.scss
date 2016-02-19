@@ -1,0 +1,110 @@
+.lust {
+  font-family: 'Lust';
+}
+
+.lust-italic {
+  font-family: 'Lust Italic';
+  font-weight: normal !important;
+}
+
+.neuzeit {
+  font-family: 'Neuzeit Office Regular';
+}
+
+.neuzeit-bold {
+  font-family: 'Neuzeit Office Bold';
+}
+
+.ct-image {
+  padding-top: 0;
+  height: 450px;
+}
+
+.ct-blog {
+  background-color: $subdued-grey !important;
+}
+
+.ct-image img {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.ct-image-wrap {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.ct-image-wrap::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom,rgba(0,156,222,.8),rgba(255,255,255,.2));
+  z-index: 1;
+}
+
+.ct-image .wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.page-author {
+  font-size: $base-font-size/1.25;
+  font-weight: bold;
+  a {
+    padding-left: $base-font-size *3;
+  }
+}
+
+.page-date {
+  font-size: $base-font-size/1.25;
+  display: block;
+  a {
+    padding-left: $base-font-size *3;
+  }
+}
+
+.page-author::before {
+  position: absolute;
+  content: '';
+  display: block;
+  border-radius: 5rem;
+  background-color: $white;
+  top: $base-font-size *2.125;
+  width: $base-font-size *2;
+  height: $base-font-size *2;
+}
+
+.page-body {
+  font-family: 'tiempos text';
+  color: $dark-grey;
+  font-size: $base-font-size *1.25;
+  line-height: $line-height-unitless*1.35;
+}
+
+.page-body p {
+  float: left;
+}
+
+.page-body img {
+  border-radius: 0.25rem;
+}
+
+.page-body p:first-child:first-letter {
+  font-family: 'Neuzeit Office Bold';
+  float: left;
+  position: relative;
+  display: block;
+  color: $dark-grey;
+  font-size: $base-font-size *5;
+  line-height: 0.75;
+  padding-right: 0.25rem;
+  padding-top: 0.875rem;
+}
